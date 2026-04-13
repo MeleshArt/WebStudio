@@ -82,7 +82,7 @@
         font-weight: 700;
         font-size: 20px;
         letter-spacing: 3%;
-        color: var(--gray-main);
+        color: $text-color;
         margin-bottom: 13px;
     }
 
@@ -97,7 +97,7 @@
         font-weight: 400;
         font-size: 12px;
         letter-spacing: 1%;
-        color: var(--gray-light);
+        color: $gray-light;
         margin-bottom: 8px;
     }
 

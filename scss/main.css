@@ -169,7 +169,7 @@
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 3%;
-  color: var(--gray-main);
+  color: #212121;
   margin-bottom: 13px;
 }
 .modal__list {
@@ -180,7 +180,7 @@
   font-weight: 400;
   font-size: 12px;
   letter-spacing: 1%;
-  color: var(--gray-light);
+  color: #757575;
   margin-bottom: 8px;
 }
 .modal__input {
