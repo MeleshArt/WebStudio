@@ -1,0 +1,164 @@
+@use '../utils/variables' as *;
+
+.hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4)), url(../../goit-markup-hw-01/images/herobg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px 0;
+    margin: 0 auto;
+    height: 600px;
+    &__title {
+        font-weight: 900;
+        font-size: 44px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    &__button {
+        background: $accent-color;
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        display: block;
+        margin: 0 auto;
+        padding: 15px 30px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+}
+
+.backdrop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    opacity: 1;
+    z-index: 1;
+}
+
+.backdrop--hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    width: 528px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    &__close {
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        border-radius: 50%;
+        border-color: rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__close-icon {
+        width: 11px;
+        height: 11px;
+    }
+
+    &__form {
+        padding: 40px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 20px;
+        letter-spacing: 3%;
+        color: var(--gray-main);
+        margin-bottom: 13px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item {}
+
+    &__label {
+        font-weight: 400;
+        font-size: 12px;
+        letter-spacing: 1%;
+        color: var(--gray-light);
+        margin-bottom: 8px;
+    }
+
+    &__field-wrap {}
+
+    &__input {
+        width: 100%;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        height: 100%;
+        padding-left: 38px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+
+    &__icon--person {}
+
+    &__icon--tel {}
+
+    &__icon--mail {}
+
+    &__textarea {
+        outline-color: $accent-color;
+
+        width: 100%;
+        resize: none;
+        height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        margin-bottom: 20px;
+        padding: 12px 16px;
+
+        &::placeholder {
+            font-weight: 400;
+            font-size: 12px;
+            letter-spacing: 1%;
+            color: rgba(117, 117, 117, 0.5);
+        }
+    }
+
+    &__policy {
+        margin-bottom: 30px;
+    }
+
+    &__policy-link {}
+
+    &__submit {
+        align-self: center;
+        padding: 10px 52px;
+        border: none;
+        border-radius: 4px;
+        background-color: #188CE8;
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 6%;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        cursor: pointer;
+    }
+}
